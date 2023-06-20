@@ -11,3 +11,5 @@ section{width: 400px;}
 
 /*FORMATANDO O BLOCO 2*/
 .bloco2{border: 10px solid purple; padding: 40px;box-sizing: border-box;}/*box-sizing:border-box irá alterar o comportamento padrão do dimensionamento do elemento HTML. De forma que quando aplicado border e padding, a estrutura não irá expandir, mas ficará com o mesmo tamanho só que recalculado.*/
+
+.bloco2 + p{text-transform: uppercase; color: orangered;}/*o seletor "+" é chamado seletor adjacente, que irá formatar o elemento exatamente após o seletor que usamos como referência, nesse caso é o bloco2.*/
