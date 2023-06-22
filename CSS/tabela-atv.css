@@ -1,0 +1,11 @@
+body{font-family:Arial, Helvetica, sans-serif;}
+h1{text-align:center;}
+
+/*FORMATAÇÃO 1*/
+table, tr, th, td{border:1px solid black;padding: 10px;} 
+table{border-collapse: collapse;width: 50%; text-align: center;margin: 0 auto;}
+
+thead >tr{background-color: green;}
+tbody > tr:nth-child(odd){background-color: olive;}
+
+tbody > tr:nth-child(5){background-color: chartreuse;}
