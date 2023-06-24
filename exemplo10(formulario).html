@@ -8,16 +8,71 @@
     <title>Trabalhando com formulário</title>
 </head>
 <body>
-    <h1>Formulários com HTML e CSS</h1>
+    <h1>Formulário com HTML e CSS</h1>
 
     <form action="#" method="get">
         <fieldset>
             <legend>Login</legend>
-            <label for="nome">Seu nome</label>
-            <input type="text" name="nome" id="nome"> <br>
+            <label for="nome">Usuário</label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome completo" maxlength="10"> <br>
     
-            <label for="senha">Sua senha</label>
-            <input type="password" name="senha" id="senha">    
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+            
+            <label for="">Qual seu estilo musical?</label> <br>
+            <input type="checkbox" name="musica" id="rock" value="rock">
+            <label for="rock">Rock</label> <br> 
+            <input type="checkbox" name="musica" id="reggae" value="reggae">
+            <label for="reggae">Reggae</label> <br>
+            <input type="checkbox" name="musica" id="forro" value="forro">
+            <label for="forro">Forró</label> <br>
+            <input type="checkbox" name="musica" id="brega" value="brega">
+            <label for="brega">Brega</label> <br>
+            <input type="checkbox" name="musica" id="gospel" value="gospel">
+            <label for="gospel">Gospel</label> 
+             
+            <br>
+            <br>
+
+            <label for="">Como está seu dia?</label> 
+            <br>
+            <input type="radio" name="dia" id="otimo" value="otimo"/>
+            <label for="otimo">Ótimo</label>
+            <br>
+            <input type="radio" name="dia" id="bom" value="bom"/>
+            <label for="bom">Bom</label>
+            <br>
+            <input type="radio" name="dia" id="ruim" value="ruim"/>
+            <label for="ruim">Ruim</label>
+
+            <br>
+            <br>
+
+            <label for="estado">Escolha seu Estado:</label> <br>
+            <select name="estado" id="estado">
+                <option value="">Escolha um Estado...</option>
+                <option value="MA">Maranhão</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+
+            <br>
+            <label for="mensagem">Deixe uma mensagem</label>
+            <br>
+            <textarea name="mensagem" id="mensagem"></textarea>
+
+            <br>
+            <br>
+            <label for="arquivo">Envie um arquivo</label> <br>
+            <input type="file" name="arquivo" id="arquivo" accept="image/*">
+            
+            <br>
+            <section class="btn">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                <input type="">Botão</button>>
+            </section>
         </fieldset>
         
     </form>

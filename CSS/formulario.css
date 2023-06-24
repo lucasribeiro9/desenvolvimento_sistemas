@@ -1,8 +1,13 @@
-body{font-family:Verdana; background-color: darkcyan; color: darkblue;}
+body{font-family:Verdana; color: green; background-color: black;}
 h1{text-align: center;}
 
 /*FORMULÁRIO*/
-form{width:80%; border:3px solid greenyellow; padding:10px; margin: 0 auto; border-top-right-radius:10px; border-bottom-right-radius:10px ;}
-input{width:100%; padding:10px;margin:15px 0;box-sizing:border-box; outline:none;border:1px solid gray}
+form{width:80%; border:3px solid green; padding:10px; margin: 0 auto; border-top-right-radius:10px; border-bottom-right-radius:10px ;}
+input, select, textarea{width:100%; padding:10px;margin:15px 0;box-sizing:border-box; outline:none;border:1px solid black; background-color:green; color: aliceblue;}
 
-input:focus{box-shadow: 0 0 15px black;}
+
+input[type=checkbox], input[type=radio]{width:5%;}
+
+input[type=text]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=checkbox]:focus, select:focus{box-shadow: 0 0 20px greenyellow;}
+
+textarea{height: 150px; resize: none;}
