@@ -11,3 +11,11 @@ input[type=checkbox], input[type=radio]{width:5%;}
 input[type=text]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=checkbox]:focus, select:focus{box-shadow: 0 0 20px greenyellow;}
 
 textarea{height: 150px; resize: none;}
+
+.btn > *{width: 30%; border: none; padding: 10px; font-size: 16px;background-color: #ccc
+    ;}
+
+.btn > *:active{outline: 6px outset greenyellow;}
+.btn > *:hover{cursor: pointer; background-color: #a5a5a5;}
+
+input[type=color]{padding: 0;}

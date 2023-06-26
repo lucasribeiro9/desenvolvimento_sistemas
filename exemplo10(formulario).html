@@ -14,7 +14,7 @@
         <fieldset>
             <legend>Login</legend>
             <label for="nome">Usuário</label>
-            <input type="text" name="nome" id="nome" placeholder="Insira seu nome completo" maxlength="10"> <br>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome completo" minlength="5" maxlength="10" required> <br>
     
             <label for="senha">Senha</label>
             <input type="password" name="senha" id="senha">
@@ -71,10 +71,22 @@
             <section class="btn">
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
-                <input type="">Botão</button>>
+                <button type="">Botão</button>
             </section>
         </fieldset>
+
+        <fieldset>
+            <legend>Outros campos de formulário</legend>
         
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade em anos">
+
+
+            <input type="date" name="nascimento" id="nascimento">
+
+            <input type="range" name="volume" id="volume" min="1" max="10">
+
+            <input type="color" name="cor" id="cor">
+        </fieldset>
     </form>
 </body>
 </html>
