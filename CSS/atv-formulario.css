@@ -1,25 +1,17 @@
-body{font-family:Arial; color: black;}
+body{font-family:Arial; color: black; font-weight: bold;}
 h1{text-align: center;}
 legend{font-weight: bold;}
 
 /*FORMULÁRIO*/
-form{width:80%; padding:10px; margin: 0 auto; border-radius:10px; display: inline-block;}
+form{width:80%; padding:10px; margin: 0 auto; border-radius:10px;}
 input, select, textarea, fieldset{width:100%; padding:10px;margin:15px 0;box-sizing:border-box; outline:none;border:1px solid black; border-radius: 10px;}
 .cliente{background-color: antiquewhite;}
 .pedido{background-color:aquamarine;}
 .cartao{background-color:coral;}
 .observacoes{background-color: violet;}
 
-input[type=checkbox], input[type=radio]{width:5%;}
+input[type=checkbox] {width:5%; padding: 0 auto;}
+.pedido > label{display: inline-block; width: 100px;}
+input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:focus
 
-input[type=text]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=checkbox]:focus
-
-textarea{height: 150px; resize: none;}
-
-.btn > *{width: 30%; border: none; padding: 10px; font-size: 16px;background-color: #ccc
-    ;}
-
-.btn > *:active{outline: 6px outset greenyellow;}
-.btn > *:hover{cursor: pointer; background-color: #a5a5a5;}
-
-input[type=color]{padding: 0;}
+.btn > *{width: 30%; border: none; padding: 10px 20px; font-size: 16px;background-color: #4caf50; color: white;}
