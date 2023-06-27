@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/atv-formulario.css">
+    <title>Pedido Online</title>
+</head>
+<body>
+    <h1>Pedido Online</h1>
+
+    <form action="#" method="get">
+        <fieldset class="cliente">
+            <legend>Informações do Cliente</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome completo com até 50 caracteres" maxlength="50" required> <br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="ex: email@email.com">
+            
+            <label for="telefone">Telefone</label>
+            <input type="number" name="number" id="number" placeholder="(98)91234-5678">
+        </fieldset>
+        <fieldset class="pedido">
+            <legend>Itens do Pedido</legend>
+            <label for="pizza">Pizza</label>
+            <input type="checkbox" name="comida" id="Pizza" value="Pizza"> <br>
+            <label for="hamburguer">Hamburguer</label>
+            <input type="checkbox" name="comida" id="Hamburguer" value="Hamburguer"> <br>
+            <label for="forro">Sorvete</label>
+            <input type="checkbox" name="comida" id="sorvete" value="sorvete">
+            
+        </fieldset>
+        <fieldset class="cartao">
+            <legend>Informações do Cartão</legend>
+            <label for="number">Nº do Cartão</label>
+            <input type="number" name="card" id="number" placeholder="1234 1234 1234 1234"/>
+            <label for="text">Nome no Cartão</label>
+            <input type="text" name="card" id="text"/>
+            <label for="number">Data de Validade</label>
+            <input type="date" name="card" id="date"/>
+            <label for="number">CVV</label>
+            <input type="number" name="card" id="number" min="0" max="999"/>
+        </fieldset>
+            <br>
+            <br>
+
+            <label for="estado">Escolha seu Estado:</label> <br>
+            <select name="estado" id="estado">
+                <option value="">Escolha um Estado...</option>
+                <option value="MA">Maranhão</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+
+            <br>
+            <label for="mensagem">Deixe uma mensagem</label>
+            <br>
+            <textarea name="mensagem" id="mensagem"></textarea>
+
+            <br>
+            <br>
+            <label for="arquivo">Envie um arquivo</label> <br>
+            <input type="file" name="arquivo" id="arquivo" accept="image/*">
+            
+            <br>
+            <section class="btn">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                <button type="">Botão</button>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Outros campos de formulário</legend>
+        
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade em anos">
+
+
+            <input type="date" name="nascimento" id="nascimento">
+
+            <input type="range" name="volume" id="volume" min="1" max="10">
+
+            <input type="color" name="cor" id="cor">
+        </fieldset>
+    </form>
+</body>
+</html>
